@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Exercice 1</title>
-  </head>
-  <body>
-      <img onmouseover="setByNewImg()" onmouseout="setByOldImg()" src="images/image1.jpg" id="image1" />
 
-<script> 
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 1</title>
+</head>
 
+<body>
+  <img onmouseover="setByNewImg()" onmouseout="setByOldImg()" src="images/image1.jpg" id="image1" />
 
-function setByNewImg() {
-    document.getElementById("image1").src="/Exercice_1/images/image1_2.jpg";
-}
+  <script>
 
 
-
-function setByOldImg() {
-    document.getElementById("image1").src="/Exercice_1/images/image1.jpg";
-}
-
-</script>
+    function setByNewImg() {
+      document.getElementById("image1").src = "/Exercice_1/images/image1_2.jpg";
+    }
 
 
-      <script src="/Exercice_1/main.js"></script>
-  </body>
+
+    function setByOldImg() {
+      document.getElementById("image1").src = "/Exercice_1/images/image1.jpg";
+    }
+
+  </script>
+
+
+  <script src="/Exercice_1/main.js"></script>
+</body>
+
 </html>

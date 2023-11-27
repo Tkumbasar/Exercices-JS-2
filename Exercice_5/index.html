@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Exercice 5</title>
-  </head>
-  <body>
-    <div class="container">
-      <img src="images/image1.jpg" id="image1" />
-      <img src="images/image2.jpg" id="image2" />
-      <img src="images/image3.jpg" id="image3" />
-      <img src="images/image4.jpg" id="image4" />
-      <img src="images/image5.jpg" id="image5" />
-    </div>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 5</title>
+</head>
+
+<body>
+  <div class="container">
+    <img onmouseover="setByNewImg()" onmouseout="setByOldImg()" src="/Exercice_5/images/image1.jpg" id="image1" />
+    <img onmouseover="setByNewImg2()" onmouseout="setByOldImg2()" src="/Exercice_5/images/image2.jpg" id="image2" />
+    <img onmouseover="setByNewImg3()" onmouseout="setByOldImg3()" src="/Exercice_5/images/image3.jpg" id="image3" />
+    <img onmouseover="setByNewImg4()" onmouseout="setByOldImg4()" src="/Exercice_5/images/image4.jpg" id="image4" />
+    <img onmouseover="setByNewImg5()" onmouseout="setByOldImg5()" src="/Exercice_5/images/image5.jpg" id="image5" />
+  </div>
+
+  <script>
+    function setByNewImg() {
+      document.getElementById("image1").src = "/Exercice_5/images/image1_2.jpg";
+    }
+    function setByOldImg() {
+      document.getElementById("image1").src = "/Exercice_5/images/image1.jpg";
+    }
+    function setByNewImg2() {
+      document.getElementById("image2").src = "/Exercice_5/images/image2_2.jpg";
+    }
+    function setByOldImg2() {
+      document.getElementById("image2").src = "/Exercice_5/images/image2.jpg";
+    }
+    function setByNewImg3() {
+      document.getElementById("image3").src = "/Exercice_5/images/image3_2.jpg";
+    }
+    function setByOldImg3() {
+      document.getElementById("image3").src = "/Exercice_5/images/image3.jpg";
+    }
+    function setByNewImg4() {
+      document.getElementById("image4").src = "/Exercice_5/images/image4_2.jpg";
+    }
+    function setByOldImg4() {
+      document.getElementById("image4").src = "/Exercice_5/images/image4.jpg";
+    }
+    function setByNewImg5() {
+      document.getElementById("image5").src = "/Exercice_5/images/image5_2.jpg";
+    }
+    function setByOldImg5() {
+      document.getElementById("image5").src = "/Exercice_5/images/image5.jpg";
+    }
+
+  </script>
+</body>
+
 </html>

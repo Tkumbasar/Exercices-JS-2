@@ -10,17 +10,19 @@
 
   <dialog open=>
     <form>
-      <label for="lastname">Votre nom : </label><input type="text" name="lastname" id="lastname" />
+      <label for="lastname">Votre nom : </label><input type="text" name="lastname" id="lastname" onkeypress="pKey()" />
     </form>
   </dialog>
 
   <script>
 
-    let input = document.getElementById("lastname");
+    function pKey() {
 
-    input.onkeydown = function () {
-      alert("ouelel")
+      let key = event.key;
+      alert (key);
+      
     }
+ 
   </script>
 </body>
 
