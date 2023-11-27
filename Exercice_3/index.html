@@ -10,19 +10,18 @@
 
   <dialog open=>
     <form>
-      <label for="lastname">Votre nom : </label><input type="text" name="lastname" id="lastname" onkeypress="pKey()" />
+      <label for="lastname">Votre nom : </label><input type="text" name="lastname" id="lastname"  />
     </form>
   </dialog>
 
   <script>
 
-    function pKey() {
+  const input= document.querySelector('#lastname');
+  
+  input.addEventListener('keyup',(event)=>{
+    alert(event.key);
+  });
 
-      let key = event.key;
-      alert (key);
-      
-    }
- 
   </script>
 </body>
 

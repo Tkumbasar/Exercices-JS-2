@@ -8,20 +8,20 @@
 
 <body>
 
-  <dialog open="">
-    <form method="dialog">
+  
+    <form >
       <label for="lastname">Votre nom :</label>
       <input type="text " name="lastname" placeholder="nom" id="nom" />
     </form>
-  </dialog>
+  
 
   <script>
 
     let input = document.getElementById("nom");
 
-    input.onblur = function () { // onblur permet d'afficher apré la sortie du focus l'inverse avec onfocus
-      alert("Merci de votre participation")
-    }
+    input.addEventListener('focusout',function(){
+      alert ('merci');
+    });
 
 
 
